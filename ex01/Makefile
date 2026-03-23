@@ -6,11 +6,11 @@
 #    By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/23 17:44:17 by mcaro-ro          #+#    #+#              #
-#    Updated: 2026/03/23 17:45:45 by mcaro-ro         ###   ########.fr        #
+#    Updated: 2026/03/23 18:46:21 by mcaro-ro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= bureaucrat
+NAME		= form
 
 INCDIR		= inc
 SRCDIR		= src
@@ -20,6 +20,7 @@ CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -I$(INCDIR)
 
 SRCS		=	$(SRCDIR)/main.cpp			\
 				$(SRCDIR)/Bureaucrat.cpp	\
+				$(SRCDIR)/Form.cpp			\
 
 BUILDDIR	= build
 OBJS		= $(SRCS:$(SRCDIR)%.cpp=$(BUILDDIR)/%.o)
