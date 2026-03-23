@@ -1,6 +1,6 @@
 *This project has been created as part of the 42 curriculum by mcaro-ro*
 
-# CPP Module 05 – Exceptions & Bureaucracy
+# CPP Module 05 – Repetition and Exceptions
 ## 📖 Description
 CPP Module 05 introduces structured error handling through C++ exceptions, along with the design of robust class hierarchies that enforce strict rules.
 Across four exercises, you will build a small bureaucratic system:
