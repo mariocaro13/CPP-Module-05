@@ -6,7 +6,7 @@
 /*   By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 15:50:14 by mcaro-ro          #+#    #+#             */
-/*   Updated: 2026/03/25 16:16:13 by mcaro-ro         ###   ########.fr       */
+/*   Updated: 2026/03/25 19:09:20 by mcaro-ro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,13 @@ RobotomyRequestForm::~RobotomyRequestForm(void) {}
 
 void RobotomyRequestForm::execute(const Bureaucrat &executor) const
 {
+	static bool seeded = false;
+	if (!seeded)
+	{
+		std::srand(std::time(NULL));
+		seeded = true;
+	}
+	
 	this->checkExecution(executor);
 
 	std::cout << "* BZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ *" << std::endl;
