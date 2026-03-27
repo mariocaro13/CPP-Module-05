@@ -6,7 +6,7 @@
 #    By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/23 17:44:17 by mcaro-ro          #+#    #+#              #
-#    Updated: 2026/03/25 16:09:27 by mcaro-ro         ###   ########.fr        #
+#    Updated: 2026/03/27 16:37:15 by mcaro-ro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRCS		=	$(SRCDIR)/main.cpp					\
 				$(SRCDIR)/PresidentialPardonForm.cpp
 
 BUILDDIR	= build
-OBJS		= $(SRCS:$(SRCDIR)%.cpp=$(BUILDDIR)/%.o)
+OBJS		= $(SRCS:$(SRCDIR)/%.cpp=$(BUILDDIR)/%.o)
 
 all: $(NAME)
 
