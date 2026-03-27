@@ -6,11 +6,11 @@
 #    By: mcaro-ro <mcaro-ro@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/23 17:44:17 by mcaro-ro          #+#    #+#              #
-#    Updated: 2026/03/27 16:44:36 by mcaro-ro         ###   ########.fr        #
+#    Updated: 2026/03/27 17:04:09 by mcaro-ro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= aform
+NAME		= intern
 
 INCDIR		= inc
 SRCDIR		= src
@@ -18,12 +18,16 @@ SRCDIR		= src
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -I$(INCDIR)
 
-SRCS		=	$(SRCDIR)/main.cpp			\
-				$(SRCDIR)/Bureaucrat.cpp	\
-				$(SRCDIR)/Form.cpp			\
+SRCS		=	$(SRCDIR)/main.cpp					\
+				$(SRCDIR)/Bureaucrat.cpp			\
+				$(SRCDIR)/AForm.cpp					\
+				$(SRCDIR)/ShrubberyCreationForm.cpp	\
+				$(SRCDIR)/RobotomyRequestForm.cpp	\
+				$(SRCDIR)/PresidentialPardonForm.cpp\
+				$(SRCDIR)/Intern.cpp
 
 BUILDDIR	= build
-OBJS		= $(SRCS:$(SRCDIR)%.cpp=$(BUILDDIR)/%.o)
+OBJS		= $(SRCS:$(SRCDIR)/%.cpp=$(BUILDDIR)/%.o)
 
 all: $(NAME)
 
